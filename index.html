@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Xbox Controller</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Xbox Controller</h1>
+      <br />
+      <br />
+      <br />
+      <div class="col">
+        <img src="img/black.jpg" alt="image" id="img" height="300px" />
+        <h1 class="colors">Colors</h1>
+        <div class="button">
+          <button class="btn btn-dark" onclick="Black();">Black</button>
+          <button class="btn btn-danger" onclick="Red();">Red</button>
+        </div>
+      </div>
+      <script>
+        function Black() {
+          document.getElementById("img").src = "img/black.jpg";
+        }
+
+        function Red() {
+          document.getElementById("img").src = "img/red.jpg";
+        }
+      </script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>
